@@ -1,0 +1,12 @@
+[
+  { "nome": "flask", "icon": "flask" },
+  { "nome": "wifi", "icon": "wifi" },
+  { "nome": "beer", "icon": "beer" },
+  { "nome": "football", "icon": "football" },
+  { "nome": "basketball", "icon": "basketball" },
+  { "nome": "paper-plane", "icon": "paper-plane" },
+  { "nome": "american-football", "icon": "american-football" },
+  { "nome": "boat", "icon": "boat" },
+  { "nome": "bluetooth", "icon": "bluetooth" },
+  { "nome": "build", "icon": "build" }
+]

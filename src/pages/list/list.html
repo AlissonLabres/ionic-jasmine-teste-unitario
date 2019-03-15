@@ -1,0 +1,29 @@
+<ion-header>
+  <bs-header
+    nomePagina="Lista de itens"
+    nomeIcone="menu"
+  ></bs-header>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngIf="listaEsportes$ | async as listaEsportes; else loadingLista">
+    <button ion-item *ngFor="let item of listaEsportes" (click)="selecionarItem(item)" >
+      <ion-icon [name]="item.icon" item-start></ion-icon>
+      {{ item.nome }}
+    </button>
+  </ion-list>
+
+  <ng-template #loadingLista>
+    <ion-item text-center>
+      <ng-container *ngIf="errorListaEsportes === ''; else exibirErrorListaEsportes">
+        <ion-spinner name="dots"></ion-spinner>
+      </ng-container>
+
+      <ng-template #exibirErrorListaEsportes> {{ errorListaEsportes }} </ng-template>
+    </ion-item>
+  </ng-template>
+
+  <ion-item *ngIf="itemSelecionado">
+    <ion-label>Item Selecionado: <strong>{{ itemSelecionado.nome.toUpperCase() }}</strong></ion-label>
+  </ion-item>
+</ion-content>

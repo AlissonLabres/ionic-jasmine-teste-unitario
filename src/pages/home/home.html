@@ -1,0 +1,13 @@
+<ion-header>
+  <bs-header
+    nomePagina="Home"
+    nomeIcone="home"
+  ></bs-header>
+</ion-header>
+
+<ion-content padding text-center>
+  <h3>Bem-vindos</h3>
+
+  <p [innerHtml]="mensagemDeBoasVindas"></p>
+  <button ion-button secondary (click)="abrirLista()">Abrir Lista</button>
+</ion-content>
