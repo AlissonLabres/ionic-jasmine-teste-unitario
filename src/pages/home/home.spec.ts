@@ -24,4 +24,10 @@ describe('HomePage', () => {
   it('deve iniciar a página HomePage', () => {
     expect(instance).toBeTruthy();
   });
+
+  it('deve verificar existencia de texto "Bem-Vindos" em elemento h3', () => {
+    const elementoH3 = fixture.debugElement.nativeElement.querySelector('h3');
+
+    expect(elementoH3.innerText).toBe('Bem-vindos');
+  })
 });

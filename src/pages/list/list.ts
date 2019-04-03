@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 import { Observable } from 'rxjs/Observable';
 import { ListaProvider } from './../../providers/lista/lista.provider';
 
@@ -18,7 +18,6 @@ export class ListPage {
 
   constructor(
     public navCtrl: NavController,
-    public navParams: NavParams,
     private listaProvider: ListaProvider
   ) {}
 
